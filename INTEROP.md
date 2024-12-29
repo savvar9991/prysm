@@ -4,7 +4,7 @@ This README details how to setup Prysm for interop testing for usage with other 
 
 > [!IMPORTANT]  
 > This guide is likely to be outdated. The Prysm team does not have capacity to troubleshoot
-> outdated interop guides or instructions. If you experience issues with this guide, please file and
+> outdated interop guides or instructions. If you experience issues with this guide, please file an
 > issue for visibility and propose fixes, if possible.
 
 ## Installation & Setup
