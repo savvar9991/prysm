@@ -1,6 +1,6 @@
 # Prysm Client Interoperability Guide
 
-This README details how to setup Prysm for interop testing for usage with other Ethereum consensus clients.
+This README details how to set up Prysm for interop testing for usage with other Ethereum consensus clients.
 
 > [!IMPORTANT]  
 > This guide is likely to be outdated. The Prysm team does not have capacity to troubleshoot
@@ -20,7 +20,7 @@ using the `--genesis-state` flag and providing a path to the genesis.ssz file.
 
 ## Generating a Genesis State
 
-To setup the necessary files for these quick starts, Prysm provides a tool to generate a `genesis.ssz` from
+To set up the necessary files for these quick starts, Prysm provides a tool to generate a `genesis.ssz` from
 a deterministically generated set of validator private keys following the official interop YAML format 
 [here](https://github.com/ethereum/eth2.0-pm/blob/master/interop/mocked_start).
 
@@ -74,7 +74,7 @@ bazel run //cmd/beacon-chain --config=minimal -- \
 This will start the system with 256 validators. The flags used can be explained as such:
 
 - `bazel run //cmd/beacon-chain --config=minimal` builds and runs the beacon node in minimal build configuration.
-- `--` is a flag divider to distingish between bazel flags and flags that should be passed to the application. All flags and arguments after this divider are passed to the beacon chain.
+- `--` is a flag divider to distinguish between bazel flags and flags that should be passed to the application. All flags and arguments after this divider are passed to the beacon chain.
 - `--minimal-config` tells the beacon node to use minimal network configuration. This is different from the compile time state configuration flag `--config=minimal` and both are required.
 - `--bootstrap-node=` disables the default bootstrap nodes. This prevents the client from attempting to peer with mainnet nodes.
 - `--datadir=/tmp/beacon-chain-minimal-devnet` sets the data directory in a temporary location. Change this to your preferred destination.
