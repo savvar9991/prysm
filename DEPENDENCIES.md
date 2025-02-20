@@ -16,7 +16,7 @@ Given some of Prysm's c++ dependencies have very complicated project structures 
 difficult or impossible with "go build" alone. Additionally, building c++ dependencies with certain
 compilers, like clang / LLVM, offer a significant performance improvement. To get around this 
 issue, c++ dependencies have been precompiled as linkable archives. While there isn't necessarily
-anything bad about precompiled archives, these files are a "blackbox" which a 3rd party author
+anything bad about precompiled archives, these files are a 'blackbox' into which a 3rd party author
 could have compiled anything for this archive and detecting undesired behavior would be nearly
 impossible. If your risk tolerance is low, always compile everything from source yourself, 
 including complicated c++ dependencies.
